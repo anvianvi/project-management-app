@@ -5,24 +5,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainComponent } from './components/main/main.component';
-import { RouterModule, Routes } from '@angular/router';
-import { MaintwoComponent } from './components/maintwo/maintwo.component';
-
-const routes: Routes = [
-  { path: '', component: MainComponent },
-  { path: 'target', component: MaintwoComponent },
-];
+import { SingupComponent } from './components/singup/singup.component';
+import { SinginComponent } from './components/singin/singin.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent],
-  imports: [BrowserModule, AppRoutingModule, RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent, SingupComponent, SinginComponent],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
-
-
-
-
-
