@@ -4,12 +4,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { MainComponent } from './components/main/main.component';
 import { SingupComponent } from './components/singup/singup.component';
 import { SinginComponent } from './components/singin/singin.component';
+import { HeroscreenComponent } from './components/heroscreen/heroscreen.component';
 
 @NgModule({
-  declarations: [AppComponent, HeaderComponent, FooterComponent, MainComponent, SingupComponent, SinginComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    SingupComponent,
+    SinginComponent,
+    HeroscreenComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
